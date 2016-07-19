@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/******START MOBILE FIRST******/
+
+/******GLOBAL******/
+* {
+	box-sizing:border-box;
+}
+.clearfix::after {
+  display: block;				/*Alternative au overflow:hidden, ou div clear*/
+  clear: both;
+
+  height: 0;
+
+  content: ".";
+
+  line-height: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0 auto;
+
+	text-align: center;
+
+  color:#FFF;
+  background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 17%, rgba(230,73,85,1) 17%, rgba(230,73,85,1) 40%, rgba(72,37,55,1) 40%, rgba(72,37,55,1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 17%,rgba(230,73,85,1) 17%,rgba(230,73,85,1) 40%,rgba(72,37,55,1) 40%,rgba(72,37,55,1) 100%);
+  background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 17%,rgba(230,73,85,1) 17%,rgba(230,73,85,1) 40%,rgba(72,37,55,1) 40%,rgba(72,37,55,1) 100%);
+
+  font-family: "Roboto Slab", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#482537',GradientType=1 );
+}
+ul {
+	padding: 0;
+}
+li {
+  list-style: none;
+}
+h1 {
+	padding: 10px;
+
+	text-transform: uppercase;
+
+	border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+
+  font-size: 2rem;
+}
+h2 {
+	text-align: center;
+
+	color: #BD4753;
+	border-bottom: 2px solid #BD4753;
+
+  font-size: 2.5em;
+	font-weight: normal;
+}
+h1, #nousConnaitre p, #socialMedia {
+	text-align:left;
+
+	font-weight: normal;
+}
+a {
+  text-decoration: none;
+
+  color: #FFF;
+}
+main {
+	max-width: 1100px;
+	margin: 50px auto;
+}
+
+/******START HEADER******/
+header nav {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+header ul {
+  float: right;
+
+  padding: 0;
+}
+header ul li {
+  display: inline-block;
+
+  margin-top: 20px;
+  padding: 0 10px;
+}
+header nav img {
+  float: left;
+}
+header a {
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  font-size: 1.5em;
+}
+header a:hover {
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+  font-weight: bold;
+}
+header {
+	width: 100%;
+	padding-bottom: 5px;
+
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+/******END HEADER******/
+
+/******START SECTION VIGNETTES******/
+
+#nosMotos {
+	margin-bottom: 50px;
+
+	font-size: 0;
+}
+
+#nosMotos article {
+	display: inline-block;
+
+	width: 23%; /*calc(25% - 30px)*/
+	margin: 10px 2.667% 0 0 ;
+	padding: 10px;
+
+	text-align: center;
+
+	color: #555;
+  border: 2px solid #FFF;
+  border-radius: 5px;
+	background-color: #FFF;
+
+	font-size: 1rem;
+}
+#nosMotos article:last-child {
+	margin-right: 0px;
+}
+#nosMotos article img {
+	width: 100%;
+	height: auto;
+}
+#nosMotos h1 i {
+  display: none;
+}
+#nosMotos article:hover {
+  border: 2px solid #482537;
+  border-radius: 5px;
+}
+
+/******END SECTION VIGNETTES******/
+
+/******START NOUS CONNAITRE******/
+#nousConnaitre > div {
+	display: block;
+	float: left;
+
+	width: 60%;
+	padding-right: 40px;
+
+	font-size: 1rem;
+}
+#socialMedia {
+	color: #E64955;
+
+	font-size: 4rem;
+}
+#socialMedia li {
+	display: inline-block;
+
+	padding-right: 20px;
+}
+video {
+	display: inline-block;
+	float: right;
+
+	width: 40%;
+	height: auto;
+	margin-top: 15px;
+
+	font-size: 1rem;
+}
+
+/******END NOUS CONNAITRE******/
+
+/******START FOOTER******/
+
+footer, span {
+	color: rgba(255,255,255,0.5);
+}
+footer a {
+  text-decoration: underline;
+
+	color: #fff;
+}
+footer {
+	display: inline-block;
+
+	max-width: 1100px;
+	margin: 30px auto;
+
+	text-align: center;
+}
+footer li {
+	display: inline-block;
+
+	padding: 10px;
+}
+/******END FOOTER******/
+
+/****** START FLEXSLIDER ******/
+.flexslider {
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+.flex-direction-nav a {
+  display: none;
+}
+.flex-control-paging li a {
+  background-color: #555;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);;
+}
+/****** END FLEXSLIDER ******/
+
+/****** MEDIA QUERIES - RESPONSIVE ******/
+
+@media screen and (max-device-width: 799px) {
+	body {
+  background: -moz-linear-gradient(-45deg, rgba(230,73,85,1) 40%, rgba(72,37,55,1) 40%, rgba(72,37,55,1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(230,73,85,1) 40%,rgba(72,37,55,1) 40%,rgba(72,37,55,1) 100%);
+  background: linear-gradient(135deg, rgba(230,73,85,1) 40%,rgba(72,37,55,1) 40%,rgba(72,37,55,1) 100%);
+	}
+	header {
+		width: 90%;
+		min-width: 360px;
+		margin: 5%;
+
+		background-color: #fff;
+	}
+	main {
+		width: 90%;
+	}
+	h1 {
+		text-align: center;
+	}
+	header img {
+		margin: 5%;
+	}
+	header ul {
+		float: right;
+
+		margin-right: 5%;
+	}
+	header ul li {
+		display: block;
+
+		text-align: right;
+	}
+	header li a {
+    padding: 5px 10px;
+
+		color: #000;
+	}
+  header li a:hover {
+    color: #FFF;
+    border-radius: 15px;
+    background-color: #482537;
+  }
+	#nosMotos article, #nosMotos article:last-child {
+		display: block;
+
+		width: 80%;
+		margin: 20px auto;
+	}
+  #nosMotos h1:hover i {
+    display: inline;
+  }
+ #nousConnaitre > div, #nousConnaitre > div > p, #nousConnaitre > div ul, video {
+		display: inline-block;
+		float: none;
+
+		width: 80%;
+		margin: 0 auto;
+
+		text-align: center;
+	}
+  #nousConnaitre > div {
+    padding-right: 0;
+  }
+	#socialMedia li {
+		display: block;
+
+		padding: 0;
+	}
+}
